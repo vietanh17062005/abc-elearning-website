@@ -3,11 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=gioi-thieu/index.html">
-    <title>ABC - Elearning - Home</title>
+    <meta name="description" content="ABC ABC E-Learning provides online learning platforms and education management solutions for schools, universities and training centers.">
+    <title>ABC E-Learning</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="shared/scroll-reveal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="shared/clean-url.js" defer></script>
 </head>
 <body>
-    <p><a href="gioi-thieu/index.html">Open the ABC homepage</a></p>
-    <script>window.location.replace('gioi-thieu/index.html');</script>
+    <iframe class="site-header" src="shared/header.html?page=home" title="Site navigation" scrolling="no"></iframe>
+
+    <main>
+        <!-- Hero: sử dụng đúng ảnh nền hero-section.png trong thư mục images -->
+        <section class="home-hero reveal-on-scroll">
+            <div class="hero-copy">
+                <h1>Providing a comprehensive solution for education</h1>
+                <p><strong>ABC E-Learning</strong> management system is a comprehensive web-based training solution that helps businesses, schools,<br class="desktop-break"> and training centers optimize resources, operate effectively, and grow breakthroughs.</p>
+            </div>
+        </section>
+
+        <!-- 6 điểm nổi bật như trang tham khảo -->
+        <section class="features-section reveal-on-scroll">
+            <div class="features-grid">
+                <article class="feature-item"><img src="images/feature-platform.svg" alt="Cross-platform"><h3>Cross-platform</h3><p>ABC is the best support web platform for your needs. Log in anywhere, on any device on Website, iOS, Android platforms.</p></article>
+                <article class="feature-item"><img src="images/feature-security.svg" alt="Absolute Security"><h3>Absolute Security</h3><p>Providing a variety of products, solutions, and utilities in a guaranteed and optimal way. Backup of client data and course materials with absolutely secure system security.</p></article>
+                <article class="feature-item"><img src="images/feature-easy-use.svg" alt="Easy to use"><h3>Easy to use</h3><p>The system is stable, with many extended, advanced components. Reasonable module hierarchy, intuitive management interface easy to operate and use.</p></article>
+                <article class="feature-item"><img src="images/feature-support.svg" alt="24-hour package support"><h3>24-hour package support</h3><p>Professional technical support team 24/7 FREE of charge for the duration of using the software.</p></article>
+                <article class="feature-item"><img src="images/feature-tech.svg" alt="Training Technology"><h3>Training Technology</h3><p>The latest E-Learning technology helps elevate your online training experience.</p></article>
+                <article class="feature-item"><img src="images/feature-variety.svg" alt="Diverse features"><h3>Diverse features</h3><p>70+ management features from overall to detailed, unlimited flexible customization.</p></article>
+            </div>
+        </section>
+
+        <!-- Service package -->
+        <section class="services-section reveal-on-scroll" id="services">
+            <div class="section-title"><h2>SERVICE<br>PACKAGE</h2><span></span><p>Coming to ABC E-Learning, you will be optimized for all benefits and experience<br class="desktop-break"> services on the Website, Web app, Mobile app or any browser you want.</p></div>
+            <div class="service-card elearning-card">
+                <div class="service-copy">
+                    <h2>E-Learning Platform</h2>
+                    <p>E-Learning Platform is an online platform used to deliver courses and learning materials through the Internet.</p>
+                    <ul class="elearning-points">
+                        <li class="is-active" tabindex="0" data-visual="0">Comprehensive solution:<br>LMS + CRM + LCMS = ABC E-Learning</li>
+                        <li tabindex="0" data-visual="1">Elearning solution for online education business exclusively for teachers, schools, organizations and professional training businesses</li>
+                        <li tabindex="0" data-visual="2">The system developed by ABC E-Learning is based on cloud computing with an extremely low starting budget, diverse features, and flexible customization to meet all online teaching and learning management requirements.</li>
+                    </ul>
+                    <a class="service-button" href="/elearning/">View details <i class="fa-solid fa-angles-right"></i></a>
+                </div>
+                <div class="elearning-visual" aria-live="polite">
+                    <div class="elearning-visual-panel solution-grid is-visible" data-image="0">
+                        <article><img src="images/elearning-lms.svg" alt="LMS"><p>The LMS online training management system helps standardize and automate the teaching and learning process in an online environment.</p></article>
+                        <article><img src="images/elearning-crm.svg" alt="CRM"><p>CRM system integrated with online payment helps automate the care of potential students and improve business performance.</p></article>
+                        <article><img src="images/elearning-lcms.svg" alt="LCMS"><p>The LCMS system stores and manages all teaching data scientifically, accessible on any device or browser.</p></article>
+                        <article><img src="images/elearning-module.svg" alt="Modules"><p>The complete system has 10+ modules and 70+ features that can be customized for immediate use.</p></article>
+                    </div>
+                    <img class="elearning-visual-panel elearning-visual-image" src="images/vision.png" alt="Online learning on multiple devices" data-image="1">
+                    <img class="elearning-visual-panel elearning-visual-image" src="images/hero-feature.png" alt="Digital learning tools and AI support" data-image="2">
+                </div>
+            </div>
+
+            <div class="service-card erp-card">
+                <div class="service-copy erp-copy">
+                    <h2>University Management System - ERP</h2>
+                    <p>The online university governance system is an important step forward in the comprehensive digital transformation of universities. ABC's university administration solution helps manage administration, teaching, research and student services on a single platform.</p>
+                </div>
+                <div class="erp-diagram" role="img" aria-label="ERP ABC with seven connected university management modules">
+                    <div class="erp-orbit"></div>
+                    <div class="erp-core">ERP<br><strong>ABC</strong></div>
+                    <div class="erp-node erp-node-1"><i class="fa-solid fa-graduation-cap"></i><span>Management of assignment</span></div>
+                    <div class="erp-node erp-node-2"><i class="fa-solid fa-building-columns"></i><span>Facilities Management</span></div>
+                    <div class="erp-node erp-node-3"><i class="fa-regular fa-address-card"></i><span>Student Management</span></div>
+                    <div class="erp-node erp-node-4"><i class="fa-solid fa-earth-asia"></i><span>External Cooperation</span></div>
+                    <div class="erp-node erp-node-5"><i class="fa-solid fa-user-check"></i><span>Personnel Management</span></div>
+                    <div class="erp-node erp-node-6"><i class="fa-solid fa-microchip"></i><span>Scientific Research</span></div>
+                    <div class="erp-node erp-node-7"><i class="fa-solid fa-person-chalkboard"></i><span>Instructional Management</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partner logos: lấy đúng 6 file logo có sẵn trong images -->
+        <section class="partners-section reveal-on-scroll">
+            <div class="partners-content">
+                <h2>TYPICAL CUSTOMERS AT ABC E-LEARNING</h2>
+                <p class="partners-subtitle">Elearning Platform Product Client</p>
+                <div class="partner-marquee" aria-label="ABC E-Learning customers">
+                    <div class="partner-track track-left">
+                        <div><img src="images/partner-ngochi24h.png" alt="Ngoại ngữ 24h"></div><div><img src="images/partner-education-hl.png" alt="Education HL"></div><div><img src="images/partner-hocthongminh.png" alt="Học thông minh"></div><div><img src="images/partner-thanh-giang.png" alt="Thanh Giang"></div><div><img src="images/partner-ielts-ms-an.png" alt="IELTS Ms An"></div><div><img src="images/partner-hoc-van-vui-ve.png" alt="Học văn vui vẻ"></div>
+                        <div aria-hidden="true"><img src="images/partner-ngochi24h.png" alt=""></div><div aria-hidden="true"><img src="images/partner-education-hl.png" alt=""></div><div aria-hidden="true"><img src="images/partner-hocthongminh.png" alt=""></div><div aria-hidden="true"><img src="images/partner-thanh-giang.png" alt=""></div><div aria-hidden="true"><img src="images/partner-ielts-ms-an.png" alt=""></div><div aria-hidden="true"><img src="images/partner-hoc-van-vui-ve.png" alt=""></div>
+                    </div>
+                    <div class="partner-track track-right" aria-hidden="true">
+                        <div><img src="images/partner-hoc-van-vui-ve.png" alt=""></div><div><img src="images/partner-ielts-ms-an.png" alt=""></div><div><img src="images/partner-thanh-giang.png" alt=""></div><div><img src="images/partner-hocthongminh.png" alt=""></div><div><img src="images/partner-education-hl.png" alt=""></div><div><img src="images/partner-ngochi24h.png" alt=""></div>
+                        <div><img src="images/partner-hoc-van-vui-ve.png" alt=""></div><div><img src="images/partner-ielts-ms-an.png" alt=""></div><div><img src="images/partner-thanh-giang.png" alt=""></div><div><img src="images/partner-hocthongminh.png" alt=""></div><div><img src="images/partner-education-hl.png" alt=""></div><div><img src="images/partner-ngochi24h.png" alt=""></div>
+                    </div>
+                </div>
+                <p class="partners-description">We continuously upgrade the quality of service so that the best products reach customers. With the principle of win-win, ABC is committed to 100% quality for all your projects.</p>
+            </div>
+        </section>
+
+        <section class="testimonials-section reveal-on-scroll">
+            <h2>What Do Customers Say About ABC E-Learning?</h2>
+            <div class="testimonial-grid">
+                <article><div class="quote-mark">“</div><h3>Dr. Nguyen Thi Van</h3><span>Social labor Civil Servant Training School</span><p>ABC has exceeded our expectations in designing and making features for the product. We look forward to continuing our working relationship with ABC.</p></article>
+                <article class="testimonial-featured"><div class="quote-mark">“</div><h3>Ms. Vu Hong</h3><span>CEO Hola Academy</span><p>Through research, I decided to choose ABC Inc. as my website. During that time, I put all my trust in ABC. In response, ABC has made me very satisfied with its enthusiasm, thoughtfulness, and most of all, my website is beautiful and handy.</p></article>
+                <article><div class="quote-mark">“</div><h3>Ms. Vu Mai Phuong</h3><span>Director of Ngoaingu24h Center</span><p>After a long time of cooperation, I feel very satisfied with ABC's services. They meet our requirements well. Thank you ABC.</p></article>
+            </div>
+        </section>
+    </main>
+
+    <iframe class="site-footer" src="shared/footer.html" title="Site footer" scrolling="no"></iframe>
+
+    <div class="floating-widgets" aria-label="Quick contact">
+        <a href="https://m.me/" target="_blank" rel="noopener" class="widget-btn messenger" title="Messenger" aria-label="Message us on Messenger"><i class="fab fa-facebook-messenger"></i></a>
+        <a href="tel:0985545955" class="widget-btn phone" title="Call us" aria-label="Call ABC"><i class="fas fa-phone-alt"></i></a>
+        <a href="#top" class="widget-btn back-to-top" title="Back to top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <script>
+        // Đổi ảnh minh họa theo nội dung E-Learning đang được trỏ chuột/chọn.
+        document.querySelectorAll('.elearning-points li').forEach((point) => {
+            const activate = () => {
+                document.querySelectorAll('.elearning-points li').forEach(item => item.classList.remove('is-active'));
+                point.classList.add('is-active');
+                const target = point.dataset.visual;
+                document.querySelectorAll('.elearning-visual-panel').forEach(image => {
+                    image.classList.toggle('is-visible', image.dataset.image === target);
+                });
+            };
+            point.addEventListener('mouseenter', activate);
+            point.addEventListener('focus', activate);
+            point.addEventListener('click', activate);
+        });
+    </script>
+    <script src="shared/scroll-reveal.js"></script>
+    <script>
+        const topButton = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => topButton.classList.toggle('show', window.scrollY > 350));
+        topButton.addEventListener('click', event => { event.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    </script>
 </body>
 </html>
