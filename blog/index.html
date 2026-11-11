@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC - Elearning - Blog</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../shared/scroll-reveal.css">
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col justify-between">
+
+    <!-- Shared header loaded from shared/header.html -->
+    <div id="header-container"></div>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+        <!-- Page title -->
+        <div class="reveal-on-scroll mb-8">
+            <h1 class="text-3xl font-bold text-orange-500 tracking-tight">Blog</h1>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Blog post list -->
+            <div class="lg:col-span-2 space-y-8">
+                <div class="blog-post-grid grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    
+                    <!-- Blog post 1 -->
+                    <article class="reveal-on-scroll bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden border border-slate-100 flex flex-col">
+                        <div class="relative overflow-hidden aspect-[16/10]">
+                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800" alt="Collaborative teaching strategies" class="blog-thumbnail">
+                        </div>
+                        <div class="p-5 flex flex-col flex-grow justify-between">
+                            <div>
+                                <h2 class="text-lg font-bold text-slate-800 hover:text-orange-500 transition-colors line-clamp-2 mb-2">
+                                    <a href="#">Collaborative learning and strategies for a more engaging classroom</a>
+                                </h2>
+                                <p class="text-xs text-slate-400 flex items-center gap-1.5 mb-3">
+                                    <i class="far fa-calendar-alt"></i> May 23, 2024
+                                </p>
+                                <p class="text-slate-600 text-sm line-clamp-3">
+                                    Collaborative learning is an effective way to improve teaching quality and support students' all-round development. Rather than placing the teacher at the center, this approach [...]
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog post 2 -->
+                    <article class="reveal-on-scroll bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden border border-slate-100 flex flex-col">
+                        <div class="relative overflow-hidden aspect-[16/10]">
+                            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800" alt="Teaching methods that capture students' attention" class="blog-thumbnail">
+                        </div>
+                        <div class="p-5 flex flex-col flex-grow justify-between">
+                            <div>
+                                <h2 class="text-lg font-bold text-slate-800 hover:text-orange-500 transition-colors line-clamp-2 mb-2">
+                                    <a href="#">Teaching methods that capture students' attention</a>
+                                </h2>
+                                <p class="text-xs text-slate-400 flex items-center gap-1.5 mb-3">
+                                    <i class="far fa-calendar-alt"></i> April 12, 2024
+                                </p>
+                                <p class="text-slate-600 text-sm line-clamp-3">
+                                    Capturing students' attention from the start of a lesson is essential to effective learning. Keeping them engaged, however, can be a challenge. [...]
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog post 3 -->
+                    <article class="reveal-on-scroll bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden border border-slate-100 flex flex-col">
+                        <div class="relative overflow-hidden aspect-[16/10]">
+                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800" alt="Online learning applications" class="blog-thumbnail">
+                        </div>
+                        <div class="p-5 flex flex-col flex-grow justify-between">
+                            <div>
+                                <h2 class="text-lg font-bold text-slate-800 hover:text-orange-500 transition-colors line-clamp-2 mb-2">
+                                    <a href="#">How to choose the best online learning app</a>
+                                </h2>
+                                <p class="text-xs text-slate-400 flex items-center gap-1.5 mb-3">
+                                    <i class="far fa-calendar-alt"></i> March 29, 2024
+                                </p>
+                                <p class="text-slate-600 text-sm line-clamp-3">
+                                    In the digital age, choosing the right online learning platforms and apps can save time and improve independent learning for students of all ages. Explore the essential criteria...
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog post 4 -->
+                    <article class="reveal-on-scroll bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden border border-slate-100 flex flex-col">
+                        <div class="relative overflow-hidden aspect-[16/10]">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="Common mistakes when selling online courses" class="blog-thumbnail">
+                        </div>
+                        <div class="p-5 flex flex-col flex-grow justify-between">
+                            <div>
+                                <h2 class="text-lg font-bold text-slate-800 hover:text-orange-500 transition-colors line-clamp-2 mb-2">
+                                    <a href="#">6 mistakes to avoid when selling online courses</a>
+                                </h2>
+                                <p class="text-xs text-slate-400 flex items-center gap-1.5 mb-3">
+                                    <i class="far fa-calendar-alt"></i> March 22, 2024
+                                </p>
+                                <p class="text-slate-600 text-sm line-clamp-3">
+                                    Online courses can be a thriving business, but many creators and instructors struggle with common marketing and course-design mistakes...
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Pagination -->
+                <div class="reveal-on-scroll flex justify-center items-center space-x-1 pt-6 pb-2">
+                    <span class="w-9 h-9 flex items-center justify-center rounded-lg bg-orange-500 text-white font-medium text-sm shadow-sm">1</span>
+                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-lg bg-white text-slate-600 hover:bg-slate-100 font-medium text-sm border border-slate-200">2</a>
+                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-lg bg-white text-slate-600 hover:bg-slate-100 font-medium text-sm border border-slate-200">3</a>
+                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-lg bg-white text-slate-600 hover:bg-slate-100 font-medium text-sm border border-slate-200">4</a>
+                    <span class="px-2 text-slate-400">...</span>
+                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-lg bg-white text-slate-600 hover:bg-slate-100 font-medium text-sm border border-slate-200">41</a>
+                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-lg bg-white text-slate-600 hover:bg-slate-100 font-medium text-sm border border-slate-200"><i class="fas fa-chevron-right text-xs"></i></a>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:col-span-1">
+                <div class="reveal-on-scroll bg-white rounded-xl shadow-sm border border-slate-100 p-5">
+                    <h3 class="text-lg font-bold text-slate-800 mb-5 pb-3 border-b border-slate-100">Recent Posts</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3 group">
+                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=200" alt="Collaborative learning" class="w-20 h-16 object-cover rounded-lg flex-shrink-0 group-hover:opacity-90 transition-opacity">
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-800 group-hover:text-orange-500 transition-colors line-clamp-2 leading-snug">
+                                    <a href="#">Collaborative learning and strategies for a more engaging classroom</a>
+                                </h4>
+                                <p class="text-xs text-slate-400 mt-1 flex items-center gap-1">
+                                    <i class="far fa-calendar-alt"></i> May 23, 2024
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 group">
+                            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=200" alt="Teaching methods" class="w-20 h-16 object-cover rounded-lg flex-shrink-0 group-hover:opacity-90 transition-opacity">
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-800 group-hover:text-orange-500 transition-colors line-clamp-2 leading-snug">
+                                    <a href="#">Teaching methods that capture students' attention</a>
+                                </h4>
+                                <p class="text-xs text-slate-400 mt-1 flex items-center gap-1">
+                                    <i class="far fa-calendar-alt"></i> April 12, 2024
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 group">
+                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=200" alt="Online learning" class="w-20 h-16 object-cover rounded-lg flex-shrink-0 group-hover:opacity-90 transition-opacity">
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-800 group-hover:text-orange-500 transition-colors line-clamp-2 leading-snug">
+                                    <a href="#">How to choose the best online learning app</a>
+                                </h4>
+                                <p class="text-xs text-slate-400 mt-1 flex items-center gap-1">
+                                    <i class="far fa-calendar-alt"></i> March 29, 2024
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Shared footer loaded from shared/footer.html -->
+    <div id="footer-container"></div>
+
+    <!-- Floating Contact Widget -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a href="tel:0805545955" class="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-orange-600 transition-colors" title="Call us">
+            <i class="fas fa-phone-alt text-lg"></i>
+        </a>
+        <a href="https://messenger.com" target="_blank" class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-blue-700 transition-colors" title="Chat Messenger">
+            <i class="fab fa-facebook-messenger text-xl"></i>
+        </a>
+    </div>
+
+    <!-- External Custom JavaScript -->
+    <script src="./script.js"></script>
+    <script src="../shared/scroll-reveal.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            width: 100%;
+            font-family: Roboto, sans-serif;
+        }
+
+        .navbar {
+            height: 82px;
+            padding: 0 5%;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            max-width: 1380px;
+            margin: 0 auto;
+        }
+
+        .logo img {
+            display: block;
+            width: 82px;
+            height: 62px;
+            object-fit: contain;
+            filter: invert(1);
+        }
+
+        .nav-right-group,
+        .nav-menu ul {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-right-group {
+            gap: 26px;
+        }
+
+        .nav-menu ul {
+            gap: 28px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: #111;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: #007bce;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .nav-menu .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: -16px;
+            z-index: 2;
+            display: none;
+            width: 230px;
+            padding: 10px 0 !important;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+        }
+
+        .dropdown.open .dropdown-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .dropdown-toggle {
+            padding: 0;
+            border: 0;
+            background: transparent;
+            color: #111;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .dropdown-toggle:hover,
+        .dropdown-toggle.active {
+            color: #007bce;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 9px 16px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .btn-consult {
+            padding: 11px 20px;
+            border-radius: 24px;
+            background: #0782d1;
+            color: #fff !important;
+            font-size: 15px !important;
+            font-weight: 700 !important;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 760px) {
+            .navbar {
+                height: auto;
+                min-height: 82px;
+                padding: 10px 4%;
+            }
+
+            .nav-container {
+                gap: 12px;
+            }
+
+            .logo img {
+                width: 66px;
+                height: 56px;
+            }
+
+            .nav-right-group {
+                justify-content: flex-end;
+                gap: 12px;
+            }
+
+            .nav-menu ul {
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                gap: 8px 14px;
+            }
+
+            .nav-menu a,
+            .dropdown-toggle {
+                font-size: 13px;
+            }
+
+            .btn-consult {
+                padding: 9px 12px;
+                font-size: 12px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <a class="logo" href="../gioi-thieu/index.html" target="_top" aria-label="Koolsoft - Home">
+                <img src="../images/logo.png" alt="Koolsoft">
+            </a>
+            <div class="nav-right-group">
+                <nav class="nav-menu" aria-label="Main navigation">
+                    <ul>
+                        <li><a data-page="gioi-thieu" href="../gioi-thieu/index.html" target="_top">About</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-toggle" type="button" aria-expanded="false">Services <i
+                                    class="fas fa-chevron-down"></i></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="../erp/index.html" target="_top">ERP - University Management</a></li>
+                                <li><a data-page="elearning" href="../elearning/index.html" target="_top">E-Learning</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a data-page="san-pham" href="../san-pham/index.html" target="_top">Product</a></li>
+                        <li><a data-page="blog" href="../blog/index.html" target="_top">Blog</a></li>
+                    </ul>
+                </nav>
+                <a class="btn-consult" href="../lien-he/index.html" target="_top">Contact us</a>
+            </div>
+        </div>
+    </header>
+    <script>
+        const page = new URLSearchParams(location.search).get('page');
+        const activeLink = document.querySelector(`[data-page="${page}"]`);
+        if (activeLink) activeLink.classList.add('active');
+
+        const dropdown = document.querySelector('.dropdown');
+        const toggle = document.querySelector('.dropdown-toggle');
+        toggle.addEventListener('click', () => {
+            const isOpen = dropdown.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', String(isOpen));
+            if (window.frameElement) window.frameElement.style.height = isOpen ? '210px' : '82px';
+        });
+
+        document.addEventListener('click', event => {
+            if (!dropdown.contains(event.target) && dropdown.classList.contains('open')) {
+                dropdown.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+                if (window.frameElement) window.frameElement.style.height = '82px';
+            }
+        });
+
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && dropdown.classList.contains('open')) {
+                dropdown.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+                if (window.frameElement) window.frameElement.style.height = '82px';
+                toggle.focus();
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC - Elearning - E-Learning Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../shared/scroll-reveal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Navigation Iframe -->
+    <iframe src="../shared/header.html?page=elearning" title="Header" scrolling="no" 
+            onmouseleave="const dropdown = this.contentDocument.querySelector('.dropdown'); if(dropdown) dropdown.classList.remove('open'); this.contentDocument.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false'); this.style.height = '82px';" 
+            style="position: sticky; top: 0; z-index: 1000; display: block; width: 100%; height: 82px; border: 0;"></iframe>
+
+    <main class="elearning-main">
+
+        <!-- 1. HERO SECTION -->
+        <section class="hero-section scroll-reveal">
+            <div class="container hero-container">
+                <div class="hero-graphic-left fade-in-left">
+                    <div class="hero-frame-container">
+                        <div class="hero-main-card">
+                            <div class="mock-hero-img">
+                                <div class="play-btn-circle"><i class="fas fa-play"></i></div>
+                                <div class="video-timeline"><div class="progress"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-text-right fade-in-right">
+                    <h2 class="hero-subtitle-green">E-learning services</h2>
+                    <h1 class="hero-title-main">PROVIDING ONLINE<br>LEARNING MANAGEMENT SYSTEMS</h1>
+                    <p class="hero-description">
+                        Launch your own e-learning platform with minimal investment, maximum management efficiency, and an exceptionally fast setup.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. AUDIENCE SECTION -->
+        <section class="audience-section scroll-reveal">
+            <div class="container audience-container">
+                <div class="audience-text-left fade-in-left">
+                    <h2 class="section-title">Who Is This System <span class="text-orange">FOR?</span></h2>
+                    <ul class="check-list">
+                        <li>
+                            <span class="check-circle"><i class="fas fa-check"></i></span>
+                            <span>Online instructors looking to maximize their productivity.</span>
+                        </li>
+                        <li>
+                            <span class="check-circle"><i class="fas fa-check"></i></span>
+                            <span>Businesses and schools that want to build their own online learning platform.</span>
+                        </li>
+                        <li>
+                            <span class="check-circle"><i class="fas fa-check"></i></span>
+                            <span>Individuals and organizations looking to enter the online learning business.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="audience-video-right fade-in-right">
+                    <div class="yt-video-card">
+                        <div class="yt-header">
+                            <div class="yt-avatar">KS</div>
+                            <span class="yt-title">E-Learning Software for Teachers</span>
+                        </div>
+                        <div class="yt-body">
+                            <div class="yt-diagram-nodes">
+                                <span class="node-pill">LMS</span>
+                                <span class="node-pill">LCMS</span>
+                                <span class="node-pill">CRM</span>
+                                <span class="node-pill">Platform</span>
+                            </div>
+                            <button class="yt-play-button" aria-label="Play Video"><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="yt-footer">
+                            <span>Watch on <i class="fab fa-youtube"></i> <strong>YouTube</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. BENEFITS SECTION -->
+        <section class="benefits-section scroll-reveal">
+            <div class="container benefits-wrapper">
+                <div class="benefits-card-floating fade-in-left">
+                    <h3>Koolsoft’s<br><span class="text-orange">E-LEARNING</span><br>services offer you these benefits:</h3>
+                </div>
+
+                <div class="benefits-box-main fade-in-right">
+                    <div class="benefits-inner-content">
+                        <ul class="benefits-check-list">
+                            <li>
+                                <span class="orange-circle-check"><i class="fas fa-check"></i></span>
+                                <span>A dedicated e-learning platform that individuals, professionals, and teachers can customize and use right away</span>
+                            </li>
+                            <li>
+                                <span class="orange-circle-check"><i class="fas fa-check"></i></span>
+                                <span>Powered by a state-of-the-art cloud platform</span>
+                            </li>
+                            <li>
+                                <span class="orange-circle-check"><i class="fas fa-check"></i></span>
+                                <span>Setup and operation are fast and convenient, with extensive integration and customization options for any device or management model.</span>
+                            </li>
+                            <li>
+                                <span class="orange-circle-check"><i class="fas fa-check"></i></span>
+                                <span>Especially effective and convenient for individuals and small training providers</span>
+                            </li>
+                        </ul>
+                        <div class="lightbulb-wrapper">
+                            <div class="bulb-glass">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. LMS FEATURES TABBED SECTION -->
+        <section class="lms-tabs-section scroll-reveal">
+            <div class="container">
+                <div class="section-center-head">
+                    <span class="pill-badge">For Every Online Learning Provider</span>
+                    <h2>LMS Features <span class="text-blue">on One Platform</span></h2>
+                    <p>Select a module to view its features. Click an image for details.</p>
+                </div>
+
+                <div class="lms-tab-layout">
+                    <!-- Left sidebar menu: nine tabs including analytics and reports -->
+                    <div class="lms-sidebar-left fade-in-left">
+                        <div class="group-label">• Administration</div>
+                        <div class="tab-item active" data-tab="tab1">
+                            <span class="tab-badge-num">01</span>
+                            <div class="tab-title">
+                                <strong>System and Account Administration</strong>
+                                <small>4 key features</small>
+                            </div>
+                        </div>
+                        <div class="tab-item" data-tab="tab2">
+                            <span class="tab-badge-num">02</span>
+                            <div class="tab-title">
+                                <strong>Course and Class Management</strong>
+                                <small>6 key features</small>
+                            </div>
+                        </div>
+
+                        <div class="group-label">• Content and Assessment</div>
+                        <div class="tab-item" data-tab="tab3">
+                            <span class="tab-badge-num">03</span>
+                            <div class="tab-title">
+                                <strong>Curriculum and Lesson Authoring</strong>
+                                <small>4 key features</small>
+                            </div>
+                        </div>
+                        <div class="tab-item" data-tab="tab4">
+                            <span class="tab-badge-num">04</span>
+                            <div class="tab-title">
+                                <strong>Learning Resource Library and Content Protection</strong>
+                                <small>5 key features</small>
+                            </div>
+                        </div>
+                        <div class="tab-item" data-tab="tab5">
+                            <span class="tab-badge-num">05</span>
+                            <div class="tab-title">
+                                <strong>Assignments, Question Bank, and Tests</strong>
+                                <small>4 key features</small>
+                            </div>
+                        </div>
+
+                        <div class="group-label">• Learning Experience</div>
+                        <div class="tab-item" data-tab="tab6">
+                            <span class="tab-badge-num">06</span>
+                            <div class="tab-title">
+                                <strong>Online Learning for Learners</strong>
+                                <small>6 key features</small>
+                            </div>
+                        </div>
+                        <div class="tab-item" data-tab="tab7">
+                            <span class="tab-badge-num">07</span>
+                            <div class="tab-title">
+                                <strong>Vocabulary and Language Skills Practice</strong>
+                                <small>8 language features</small>
+                            </div>
+                        </div>
+                        <div class="tab-item" data-tab="tab8">
+                            <span class="tab-badge-num">08</span>
+                            <div class="tab-title">
+                                <strong>AI Assistant and Personalized Learning</strong>
+                                <small>4 AI features</small>
+                            </div>
+                        </div>
+
+                        <div class="group-label">• Reporting</div>
+                        <div class="tab-item" data-tab="tab9">
+                            <span class="tab-badge-num">09</span>
+                            <div class="tab-title">
+                                <strong>Learning Analytics and Reports</strong>
+                                <small>2 key features</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Panel RIGHT -->
+                    <div class="lms-panel-right fade-in-right">
+                        
+                        <!-- TAB 1: System and Account Administration (01-04) -->
+                        <div class="tab-content active" id="tab1">
+                            <div class="content-head">
+                                <span class="sub-link">• Module 01: System and Account Administration</span>
+                                <h3>Feature 01: System and Account Administration</h3>
+                                <p>Manage registration, sign-in, profiles, and account security for all user groups. Centrally administer training institutions, including learner accounts and their status.</p>
+                            </div>
+                            <div class="feature-mockups-grid grid-2x2">
+                                <div class="mockup-card clickable-feature" data-feature="1">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-body-register"><div class="ui-title-bar">Register</div><div class="ui-input-field"></div><div class="ui-input-field"></div><div class="ui-btn-primary">Register</div></div></div></div>
+                                    <span class="card-num">01</span>
+                                    <h4>Registration and System Access</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="2">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-body-profile"><div class="ui-avatar-circle"></div><div class="ui-profile-lines"><div class="p-line"></div><div class="p-line short"></div></div></div></div></div>
+                                    <span class="card-num">02</span>
+                                    <h4>Personal Profiles and Account Security</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="3">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-table-grid"><div class="t-row h"></div><div class="t-row"></div><div class="t-row"></div></div></div></div>
+                                    <span class="card-num">03</span>
+                                    <h4>Training Institution Management</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="4">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-users-list"><div class="u-item"></div><div class="u-item"></div></div></div></div>
+                                    <span class="card-num">04</span>
+                                    <h4>Learner and Account Status Management</h4>
+                                </div>
+                            </div>
+                            <div class="next-tab-footer text-right">
+                                <button class="btn-next-tab" data-target="tab2">2. Course and Class Management <i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        
+                        <!-- TAB 2: Course and Class Management (05-10) -->
+                        <div class="tab-content" id="tab2">
+                            <div class="content-head">
+                                <span class="sub-link">• Course and Class Management · Module 02</span>
+                                <h3>Feature 02: Course and Class Management</h3>
+                                <p>Manage the full lifecycle of each training institution’s courses: create, configure, publish, pause, and archive. Manage members (learners and instructors), learning modes, unlock conditions, and course visibility.</p>
+                            </div>
+                            <div class="feature-mockups-grid grid-3x2">
+                                <div class="mockup-card clickable-feature" data-feature="5">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-cards-row"><div class="c-mini"></div><div class="c-mini"></div></div></div></div>
+                                    <span class="card-num">05</span>
+                                    <h4>Institution Courses and Class Overview</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="6">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-lifecycle-box"><div class="lc-badge"></div><div class="lc-line"></div></div></div></div>
+                                    <span class="card-num">06</span>
+                                    <h4>Course Lifecycle and General Information</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="7">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-lock-settings"><div class="l-check"></div><div class="l-check"></div></div></div></div>
+                                    <span class="card-num">07</span>
+                                    <h4>Learning Modes and Lesson Unlock Conditions</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="8">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-table-grid"><div class="t-row h"></div><div class="t-row"></div></div></div></div>
+                                    <span class="card-num">08</span>
+                                    <h4>Course Members: Learners</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="9">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-table-grid"><div class="t-row h"></div><div class="t-row"></div></div></div></div>
+                                    <span class="card-num">09</span>
+                                    <h4>Course Members: Instructors</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="10">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-featured-box"></div></div></div>
+                                    <span class="card-num">10</span>
+                                    <h4>Course Visibility and Featured Materials</h4>
+                                </div>
+                            </div>
+                            <div class="tab-nav-footer-split">
+                                <button class="btn-prev-tab" data-target="tab1"><i class="fas fa-chevron-left"></i> 1. System and Account Administration</button>
+                                <button class="btn-next-tab" data-target="tab3">3. Curriculum and Lesson Authoring <i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- TAB 3: Curriculum and Lesson Authoring (11-14) -->
+                        <div class="tab-content" id="tab3">
+                            <div class="content-head">
+                                <span class="sub-link">• Curriculum and Lesson Authoring · Module 03</span>
+                                <h3>Feature 03: Curriculum and Lesson Authoring</h3>
+                                <p>Tools for building curricula and authoring multimedia lessons (text, images, audio, and video). Create interactive video lessons and attach learning materials to each lesson.</p>
+                            </div>
+                            <div class="feature-mockups-grid grid-3x2">
+                                <div class="mockup-card clickable-feature" data-feature="11">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-table-grid"><div class="t-row h"></div><div class="t-row"></div></div></div></div>
+                                    <span class="card-num">11</span>
+                                    <h4>Curriculum and Lessons</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="12">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-cards-row"><div class="c-mini"></div><div class="c-mini"></div></div></div></div>
+                                    <span class="card-num">12</span>
+                                    <h4>Multimedia Lesson Authoring</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="13">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-lifecycle-box"><div class="lc-badge"></div><div class="lc-line"></div></div></div></div>
+                                    <span class="card-num">13</span>
+                                    <h4>Interactive Video Lesson Scenarios</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="14">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-featured-box"></div></div></div>
+                                    <span class="card-num">14</span>
+                                    <h4>Lesson Learning Materials</h4>
+                                </div>
+                            </div>
+                            <div class="tab-nav-footer-split">
+                                <button class="btn-prev-tab" data-target="tab2"><i class="fas fa-chevron-left"></i> 2. Course and Class Management</button>
+                                <button class="btn-next-tab" data-target="tab4">4. Learning Resource Library and Content Protection <i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- TAB 4: Learning Resource Library and Content Protection (15-19) -->
+                        <div class="tab-content" id="tab4">
+                            <div class="content-head">
+                                <span class="sub-link">• Learning Resource Library and Content Protection · Module 04</span>
+                                <h3>Feature 04: Learning Resource Library and Content Protection</h3>
+                                <p>Manage a shared learning resource library, including word families, reading passages with vocabulary review, and instructor resources. Copy content between courses, track changes, and protect content from copying.</p>
+                            </div>
+                            <div class="feature-mockups-grid grid-3x2">
+                                <div class="mockup-card clickable-feature" data-feature="15">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-table-grid"><div class="t-row h"></div><div class="t-row"></div></div></div></div>
+                                    <span class="card-num">15</span>
+                                    <h4>Change Log</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="16">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-lock-settings"><div class="l-check"></div></div></div></div>
+                                    <span class="card-num">16</span>
+                                    <h4>Copy Protection</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="17">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-table-grid"><div class="t-row h"></div></div></div></div>
+                                    <span class="card-num">17</span>
+                                    <h4>Word Family Library and Vocabulary Review Readings</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="18">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-cards-row"><div class="c-mini"></div></div></div></div>
+                                    <span class="card-num">18</span>
+                                    <h4>Copy Content Between Courses</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="19">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-featured-box"></div></div></div>
+                                    <span class="card-num">19</span>
+                                    <h4>Instructor Resources</h4>
+                                </div>
+                            </div>
+                            <div class="tab-nav-footer-split">
+                                <button class="btn-prev-tab" data-target="tab3"><i class="fas fa-chevron-left"></i> 3. Curriculum and Lesson Authoring</button>
+                                <button class="btn-next-tab" data-target="tab5">5. Assignments, Question Bank, and Tests <i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- TAB 5: Assignments, Question Bank, and Tests (20-23) -->
+                        <div class="tab-content" id="tab5">
+                            <div class="content-head">
+                                <span class="sub-link">• Assignments, Question Bank, and Tests · Module 05</span>
+                                <h3>Feature 05: Assignments, Question Bank, and Tests</h3>
+                                <p>Create, assign, and manage question-based and skills-practice assignments using a shared question bank. Run end-of-level tests to assess learner proficiency.</p>
+                            </div>
+                            <div class="feature-mockups-grid grid-3x2">
+                                <div class="mockup-card clickable-feature" data-feature="20">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-table-grid"><div class="t-row h"></div><div class="t-row"></div></div></div></div>
+                                    <span class="card-num">20</span>
+                                    <h4>Assignment and Test Setup and Management</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="21">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-cards-row"><div class="c-mini"></div><div class="c-mini"></div></div></div></div>
+                                    <span class="card-num">21</span>
+                                    <h4>Question-Based Assignments and Skills Practice</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="22">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-lifecycle-box"><div class="lc-badge"></div></div></div></div>
+                                    <span class="card-num">22</span>
+                                    <h4>Question Bank</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="23">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-featured-box"></div></div></div>
+                                    <span class="card-num">23</span>
+                                    <h4>End-of-Level Test</h4>
+                                </div>
+                            </div>
+                            <div class="tab-nav-footer-split">
+                                <button class="btn-prev-tab" data-target="tab4"><i class="fas fa-chevron-left"></i> 4. Learning Resource Library and Content Protection</button>
+                                <button class="btn-next-tab" data-target="tab6">6. Online Learning for Learners <i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- TAB 6: Learner Online Learning (24-29) -->
+                        <div class="tab-content" id="tab6">
+                            <div class="content-head">
+                                <span class="sub-link">• Online Learning for Learners · Module 06</span>
+                                <h3>Feature 06: Online Learning for Learners</h3>
+                                <p>A learning portal where learners can explore and join courses and track course structure and progress. Includes multimedia lessons, materials, bookmarks, notes, and a customizable learning interface.</p>
+                            </div>
+                            <div class="feature-mockups-grid grid-3x2">
+                                <div class="mockup-card clickable-feature" data-feature="24">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-cards-row"><div class="c-mini"></div><div class="c-mini"></div></div></div></div>
+                                    <span class="card-num">24</span>
+                                    <h4>Explore and Join Courses</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="25">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-lifecycle-box"><div class="lc-line"></div></div></div></div>
+                                    <span class="card-num">25</span>
+                                    <h4>Course Structure and Progress</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="26">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-featured-box"></div></div></div>
+                                    <span class="card-num">26</span>
+                                    <h4>Multimedia Lessons</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="27">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-table-grid"><div class="t-row h"></div></div></div></div>
+                                    <span class="card-num">27</span>
+                                    <h4>Learning Materials</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="28">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-lock-settings"><div class="l-check"></div></div></div></div>
+                                    <span class="card-num">28</span>
+                                    <h4>Bookmarks and Notes</h4>
+                                </div>
+                                <div class="mockup-card clickable-feature" data-feature="29">
+                                    <div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-featured-box"></div></div></div>
+                                    <span class="card-num">29</span>
+                                    <h4>Customize the Learning Interface</h4>
+                                </div>
+                            </div>
+                            <div class="tab-nav-footer-split">
+                                <button class="btn-prev-tab" data-target="tab5"><i class="fas fa-chevron-left"></i> 5. Assignments, Question Bank, and Tests</button>
+                                <button class="btn-next-tab" data-target="tab7">7. Vocabulary and Language Skills Practice <i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- TAB 7: Vocabulary and Language Skills Practice (30-37) -->
+                        <div class="tab-content" id="tab7">
+                            <div class="content-head">
+                                <span class="sub-link">• Vocabulary and Language Skills Practice · Module 07</span>
+                                <h3>Feature 07: Vocabulary and Language Skills Practice</h3>
+                                <p>English practice tools include vocabulary lookup, a personal flashcard notebook, vocabulary games, translation and speaking practice, news reading, dictation, and shadowing.</p>
+                            </div>
+                            <div class="feature-mockups-grid grid-3x2">
+                                <div class="mockup-card clickable-feature" data-feature="30"><div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-table-grid"><div class="t-row h"></div></div></div></div><span class="card-num">30</span><h4>Vocabulary Lookup</h4></div>
+                                <div class="mockup-card clickable-feature" data-feature="31"><div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-cards-row"><div class="c-mini"></div></div></div></div><span class="card-num">31</span><h4>My Flashcard Vocabulary Notebook</h4></div>
+                                <div class="mockup-card clickable-feature" data-feature="32"><div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-featured-box"></div></div></div><span class="card-num">32</span><h4>Practice Vocabulary with Flashcards</h4></div>
+                                <div class="mockup-card clickable-feature" data-feature="33"><div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-lifecycle-box"></div></div></div><span class="card-num">33</span><h4>Vocabulary Games</h4></div>
+                                <div class="mockup-card clickable-feature" data-feature="34"><div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-table-grid"></div></div></div><span class="card-num">34</span><h4>Translation and Speaking Practice</h4></div>
+                                <div class="mockup-card clickable-feature" data-feature="35"><div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-featured-box"></div></div></div><span class="card-num">35</span><h4>News Reading Practice</h4></div>
+                                <div class="mockup-card clickable-feature" data-feature="36"><div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-cards-row"></div></div></div><span class="card-num">36</span><h4>Listening and Dictation Practice</h4></div>
+                                <div class="mockup-card clickable-feature" data-feature="37"><div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-featured-box"></div></div></div><span class="card-num">37</span><h4>Shadowing Practice</h4></div>
+                            </div>
+                            <div class="tab-nav-footer-split">
+                                <button class="btn-prev-tab" data-target="tab6"><i class="fas fa-chevron-left"></i> 6. Online Learning for Learners</button>
+                                <button class="btn-next-tab" data-target="tab8">8. AI Assistant and Personalized Learning <i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- TAB 8: AI Assistant and Personalized Learning (38-41) -->
+                        <div class="tab-content" id="tab8">
+                            <div class="content-head">
+                                <span class="sub-link">• AI Assistant and Personalized Learning · Module 08</span>
+                                <h3>Feature 08: AI Assistant and Personalized Learning</h3>
+                                <p>Use AI to practice English pronunciation and answer questions based on course materials. Recommend personalized learning paths suited to each learner’s ability and progress.</p>
+                            </div>
+                            <div class="feature-mockups-grid grid-3x2">
+                                <div class="mockup-card clickable-feature" data-feature="38"><div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-table-grid"><div class="t-row h"></div></div></div></div><span class="card-num">38</span><h4>AI English Pronunciation Practice</h4></div>
+                                <div class="mockup-card clickable-feature" data-feature="39"><div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-cards-row"><div class="c-mini"></div></div></div></div><span class="card-num">39</span><h4>AI Tutor Based on Course Materials</h4></div>
+                                <div class="mockup-card clickable-feature" data-feature="40"><div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-lifecycle-box"><div class="lc-badge"></div></div></div></div><span class="card-num">40</span><h4>Personalized Learning Path</h4></div>
+                                <div class="mockup-card clickable-feature" data-feature="41"><div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-featured-box"></div></div></div><span class="card-num">41</span><h4>AI Writing Assessment</h4></div>
+                            </div>
+                            <div class="tab-nav-footer-split">
+                                <button class="btn-prev-tab" data-target="tab7"><i class="fas fa-chevron-left"></i> 7. Vocabulary and Language Skills Practice</button>
+                                <button class="btn-next-tab" data-target="tab9">9. Learning Analytics and Reports <i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- TAB 9: Learning Analytics and Reports (42-43) -->
+                        <div class="tab-content" id="tab9">
+                            <div class="content-head">
+                                <span class="sub-link">• Learning Analytics and Reports · Module 09</span>
+                                <h3>Feature 09: Learning Analytics and Reports</h3>
+                                <p>Provide course-level learning analytics so instructors and administrators can track learner progress and results. Export management data to Excel for reporting and recordkeeping.</p>
+                            </div>
+                            <div class="feature-mockups-grid grid-2x2">
+                                <div class="mockup-card clickable-feature" data-feature="42"><div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-table-grid"><div class="t-row h"></div></div></div></div><span class="card-num">42</span><h4>Course Learning Analytics</h4></div>
+                                <div class="mockup-card clickable-feature" data-feature="43"><div class="card-thumb"><div class="ui-mockup-screen"><div class="ui-topbar"></div><div class="ui-cards-row"><div class="c-mini"></div></div></div></div><span class="card-num">43</span><h4>Export Management Data to Excel</h4></div>
+                            </div>
+                            <div class="tab-nav-footer-split">
+                                <button class="btn-prev-tab" data-target="tab8"><i class="fas fa-chevron-left"></i> 8. AI Assistant and Personalized Learning</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. DIVERSE FEATURES ACCORDION GRID (HOVER TO SHOW CONTENT) -->
+        <section class="diverse-section scroll-reveal">
+            <div class="container">
+                <div class="diverse-head text-center fade-in-up">
+                    <h2>A RICH FEATURE SET</h2>
+                    <p>No need for multiple tools for different purposes—we can meet all your needs.</p>
+                </div>
+
+                <div class="diverse-grid">
+                    <!-- Box 1: Course Management -->
+                    <div class="d-box hover-box fade-in-up">
+                        <div class="d-box-head"><i class="fas fa-graduation-cap"></i><span>Course Management</span></div>
+                        <div class="d-box-body hover-dropdown">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Organized by topic</li>
+                                <li><i class="fas fa-check"></i> Organized by level</li>
+                                <li><i class="fas fa-check"></i> Free courses</li>
+                                <li><i class="fas fa-check"></i> Paid courses</li>
+                                <li><i class="fas fa-check"></i> Course bundles</li>
+                                <li><i class="fas fa-check"></i> Flash-sale courses</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Box 2: Online Learning -->
+                    <div class="d-box hover-box fade-in-up">
+                        <div class="d-box-head"><i class="fas fa-video"></i><span>Online Learning</span></div>
+                        <div class="d-box-body hover-dropdown">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Learn with scripted video lessons, combining instruction and exercises in a format similar to Harvard and MIT courses on Coursera.</li>
+                                <li><i class="fas fa-check"></i> Complete assignments with smart review and varied question types, including multiple choice, fill-in-the-blank, ordering, true/false, and flashcards.</li>
+                                <li><i class="fas fa-check"></i> Learners can take notes directly in the learning interface.</li>
+                                <li><i class="fas fa-check"></i> Periodic assessments are delivered by email, SMS, and in-system push notifications.</li>
+                                <li><i class="fas fa-check"></i> PREVENT ACCOUNT SHARING</li>
+                                <li><i class="fas fa-check"></i> PREVENT VIDEO DOWNLOADS</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Box 3: Online Tests and Q&A -->
+                    <div class="d-box hover-box fade-in-up">
+                        <div class="d-box-head"><i class="fas fa-clipboard-list"></i><span>Online Tests and Q&A</span></div>
+                        <div class="d-box-body hover-dropdown">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Organize different exams by instructor-defined purpose</li>
+                                <li><i class="fas fa-check"></i> Smart note-taking is available directly in the test interface</li>
+                                <li><i class="fas fa-check"></i> Automatically calculate and share scores, and generate PERSONALIZED reports for each learner</li>
+                                <li><i class="fas fa-check"></i> Chat with instructors and teaching assistants</li>
+                                <li><i class="fas fa-check"></i> Lessons, assignments, and questions can all receive comments.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Box 4: Features for Leaders and Administrators -->
+                    <div class="d-box hover-box fade-in-up">
+                        <div class="d-box-head"><i class="fas fa-user-shield"></i><span>Features for Leaders and Administrators</span></div>
+                        <div class="d-box-body hover-dropdown">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Manage courses</li>
+                                <li><i class="fas fa-check"></i> Manage instructor and learner information</li>
+                                <li><i class="fas fa-check"></i> Manage orders</li>
+                                <li><i class="fas fa-check"></i> Doanh thu</li>
+                                <li><i class="fas fa-check"></i> Access control</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Box 5: Features for Instructors -->
+                    <div class="d-box hover-box fade-in-up">
+                        <div class="d-box-head"><i class="fas fa-user-tie"></i><span>Features for Instructors</span></div>
+                        <div class="d-box-body hover-dropdown">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Create courses;</li>
+                                <li><i class="fas fa-check"></i> Edit course content, lessons, assignments, and tests.</li>
+                                <li><i class="fas fa-check"></i> Assign work to students by class and lesson.</li>
+                                <li><i class="fas fa-check"></i> Track and review the history of materials, lessons, and assignments.</li>
+                                <li><i class="fas fa-check"></i> View learner progress.</li>
+                                <li><i class="fas fa-check"></i> Track test results and reports.</li>
+                                <li><i class="fas fa-check"></i> Answer learner questions.</li>
+                                <li><i class="fas fa-check"></i> Review and assess learners.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Box 6: Features for Learners -->
+                    <div class="d-box hover-box fade-in-up">
+                        <div class="d-box-head"><i class="fas fa-user"></i><span>Features for Learners</span></div>
+                        <div class="d-box-body hover-dropdown">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Access free courses or purchase paid courses.</li>
+                                <li><i class="fas fa-check"></i> Access online learning and test-preparation modules.</li>
+                                <li><i class="fas fa-check"></i> View assignment and test results.</li>
+                                <li><i class="fas fa-check"></i> View proficiency assessments based on strengths and weaknesses shown in assignment and test results.</li>
+                                <li><i class="fas fa-check"></i> Ask questions.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Box 7: Online Sales Management -->
+                    <div class="d-box hover-box fade-in-up">
+                        <div class="d-box-head"><i class="fas fa-store"></i><span>Online Sales Management</span></div>
+                        <div class="d-box-body hover-dropdown">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Access courses.</li>
+                                <li><i class="fas fa-check"></i> Track newly registered learners.</li>
+                                <li><i class="fas fa-check"></i> View learner contact details: phone and email</li>
+                                <li><i class="fas fa-check"></i> Create orders, send access codes, and activate courses for learners.</li>
+                                <li><i class="fas fa-check"></i> Track learners’ progress after a sale.</li>
+                                <li><i class="fas fa-check"></i> View sales statistics and reports for your orders</li>
+                                <li><i class="fas fa-check"></i> Manage sales accounts.</li>
+                                <li><i class="fas fa-check"></i> Track revenue and orders</li>
+                                <li><i class="fas fa-check"></i> View sales reports for each sales account</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Box 8: Learning Content Management (CMS) -->
+                    <div class="d-box hover-box fade-in-up">
+                        <div class="d-box-head"><i class="fas fa-folder-open"></i><span>Learning Content Management (CMS)</span></div>
+                        <div class="d-box-body hover-dropdown">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Manage lessons and create smart lesson flows.</li>
+                                <li><i class="fas fa-check"></i> Create assignments and questions in bulk from Excel or import them from the resource library.</li>
+                                <li><i class="fas fa-check"></i> Create online tests using questions from existing resources, and unlock the next lesson when students complete their homework.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Box 9: Customer Relationship Management (CRM) -->
+                    <div class="d-box hover-box fade-in-up">
+                        <div class="d-box-head"><i class="fas fa-users-cog"></i><span>Customer Relationship Management (CRM)</span></div>
+                        <div class="d-box-body hover-dropdown">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Manage and engage users with smart tagging and scoring.</li>
+                                <li><i class="fas fa-check"></i> Track orders and manage access codes.</li>
+                                <li><i class="fas fa-check"></i> Manage revenue.</li>
+                                <li><i class="fas fa-check"></i> Manage sales staff.</li>
+                                <li><i class="fas fa-check"></i> Manage agents and affiliates.</li>
+                                <li><i class="fas fa-check"></i> Export data and reports to Excel or visual charts.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Box 10: Online Payments -->
+                    <div class="d-box hover-box center-span fade-in-up">
+                        <div class="d-box-head"><i class="fas fa-credit-card"></i><span>Online Payments</span></div>
+                        <div class="d-box-body hover-dropdown">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Integrate with multiple online payment methods (VNPay, MoMo, bank transfer, and international cards).</li>
+                                <li><i class="fas fa-check"></i> Automatically confirm transactions and activate courses for learners immediately.</li>
+                                <li><i class="fas fa-check"></i> Manage transaction history and reconcile accounts transparently.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. PARTNERS LOGO SECTION -->
+        <section class="partners-section scroll-reveal">
+            <div class="container text-center">
+                <h2 class="partners-title fade-in-up">We provide E-Learning systems<br>for partners such as</h2>
+                <div class="partner-logos-row fade-in-up">
+                    <div class="p-logo-badge"><img src="../images/partner-ngochi24h.png" alt="24h Foreign Language Center partner"></div>
+                    <div class="p-logo-badge"><img src="../images/partner-education-hl.png" alt="Education HL Partner"></div>
+                    <div class="p-logo-badge"><img src="../images/partner-hocthongminh.png" alt="Smart Learning partner"></div>
+                    <div class="p-logo-badge"><img src="../images/partner-thanh-giang.png" alt="Thanh Giang Partner"></div>
+                    <div class="p-logo-badge"><img src="../images/partner-ielts-ms-an.png" alt="IELTS Ms An Partner"></div>
+                    <div class="p-logo-badge"><img src="../images/partner-hoc-van-vui-ve.png" alt="Learning Is Still Fun partner"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. SERVICE PACKAGES SECTION -->
+        <section class="handshake-packages-section scroll-reveal">
+            <div class="container">
+                <h2 class="pkg-main-title text-center fade-in-up">OUR SPECIALTY IS PROVIDING<br>SERVICE PACKAGES</h2>
+                <div class="pkg-cards-grid">
+                    <div class="pkg-white-card fade-in-left">
+                        <h3>ALL-IN-ONE<br>SYSTEM TRANSFER</h3>
+                        <p>Pricing is based on the system’s current state. The final cost includes customer-requested customizations, infrastructure, and system operations.</p>
+                        <a href="../lien-he/index.html" class="pkg-btn-outline">Contact Us</a>
+                    </div>
+
+                    <div class="pkg-white-card fade-in-up">
+                        <h3>REVENUE-SHARING<br>PARTNERSHIP</h3>
+                        <p>Includes mutually agreed system customization costs and infrastructure and operations costs. Both parties agree on a revenue schedule and commit to the agreed targets.</p>
+                        <a href="../lien-he/index.html" class="pkg-btn-outline">Contact Us</a>
+                    </div>
+
+                    <div class="pkg-white-card fade-in-right">
+                        <h3>MONTHLY<br>SUBSCRIPTION</h3>
+                        <p>Koolsoft’s service plans offer more choices and greater value. Infrastructure and operations are included; customer-requested customizations are not.</p>
+                        <a href="../lien-he/index.html" class="pkg-btn-outline">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- POPUP MODAL FOR FEATURE SCREENSHOTS WITH REAL MINI IMAGE THUMBNAILS -->
+    <div class="feature-modal" id="featureModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-dialog">
+            <div class="modal-content-card">
+                <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close">&times;</button>
+                <div class="modal-header-info">
+                    <span class="modal-subtag" id="modalSubtag">• Module 01: System and Account Administration</span>
+                    <h3 class="modal-title" id="modalTitle">Feature 01: System and Account Administration</h3>
+                </div>
+                <div class="modal-body-viewer">
+                    <button class="nav-arrow nav-left" id="modalNavLeft" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                    <div class="modal-display-frame">
+                        <div class="modal-screen-preview" id="modalScreenPreview">
+                            <!-- Dynamic Content Rendered by JS -->
+                        </div>
+                    </div>
+                    <button class="nav-arrow nav-right" id="modalNavRight" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="modal-thumbnails-strip" id="modalThumbnailsStrip">
+                    <!-- Dynamic Thumbnails Rendered by JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Navigation Iframe -->
+    <iframe src="../shared/footer.html" title="Footer" scrolling="no" style="display: block; width: 100%; height: 345px; border: 0;"></iframe>
+
+    <!-- Floating Widgets -->
+    <div class="floating-widgets">
+        <a href="https://m.me/" target="_blank" rel="noopener" class="widget-btn messenger" title="Messenger" aria-label="Message us on Messenger" title="Messenger" aria-label="Message us on Messenger"><i class="fab fa-facebook-messenger"></i></a>
+        <a href="tel:0985545955" class="widget-btn phone" title="Call" aria-label="Call Koolsoft" title="Call" aria-label="Call Koolsoft"><i class="fas fa-phone-alt"></i></a>
+        <a href="#" class="widget-btn back-to-top" id="backToTop" title="Back to top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="../shared/scroll-reveal.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const topButton = document.getElementById('backToTop');
+  if (!topButton) return;
+  topButton.addEventListener('click', function (event) { event.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  const updateTopButton = function () { topButton.style.display = window.scrollY > 250 ? 'flex' : 'none'; };
+  window.addEventListener('scroll', updateTopButton, { passive: true });
+  updateTopButton();
+});
+</script>
+</body>
+</html>

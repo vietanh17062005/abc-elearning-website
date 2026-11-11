@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC - Elearning - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../shared/scroll-reveal.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <iframe src="../shared/header.html?page=lien-he" title="Header" scrolling="no" onmouseleave="const dropdown = this.contentDocument.querySelector('.dropdown'); dropdown.classList.remove('open'); this.contentDocument.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false'); this.style.height = '82px';" style="position: sticky; top: 0; z-index: 1000; display: block; width: 100%; height: 82px; border: 0;"></iframe>
+
+    <!-- Main Contact Page Content -->
+    <main class="contact-page-section">
+        <div class="container">
+            <!-- Intro description -->
+            <p class="contact-intro-text" data-aos="fade-down" data-aos-duration="800">
+                ABC is an online training-center management platform developed by Koolsoft Inc., a leading provider of learning and exam-preparation software and applications.
+            </p>
+
+            <div class="contact-grid-container">
+                <!-- Left Box: Office Information -->
+                <div class="contact-info-card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="card-header-bar">
+                        ABC
+                    </div>
+                    <div class="card-body-content">
+                        <h4 class="info-group-title">Office Location:</h4>
+                        <ul class="contact-detail-list">
+                            <li>
+                                <i class="fas fa-map-marker-alt icon-blue"></i>
+                                <span>Thanh An Building, 699 Vu Tong Phan Street, Khuong Dinh, Hanoi</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope icon-blue"></i>
+                                <span><a href="mailto:support@abc-elearning.org">support@abc-elearning.org</a></span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone icon-blue"></i>
+                                <span>0985545955</span>
+                            </li>
+                        </ul>
+
+                        <h4 class="info-group-title hours-title">Opening Hours:</h4>
+                        <div class="opening-hours-row">
+                            <span>MONDAY – SATURDAY</span>
+                            <span class="hours-time">8:00 – 17:30</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Box: Contact Form -->
+                <div class="contact-form-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="card-header-bar">
+                        CONTACT US
+                    </div>
+                    <form class="contact-form" id="contactPageForm">
+                        <div class="floating-label-group">
+                            <input type="text" id="subject" placeholder=" " required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="floating-label-group">
+                            <input type="text" id="fullname" placeholder=" " required>
+                            <label for="fullname">Full name</label>
+                        </div>
+                        <div class="floating-label-group">
+                            <input type="tel" id="phone" placeholder=" " required>
+                            <label for="phone">Phone</label>
+                        </div>
+                        <div class="floating-label-group">
+                            <input type="email" id="email" placeholder=" " required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="floating-label-group">
+                            <input type="text" id="organization" placeholder=" ">
+                            <label for="organization">Organization</label>
+                        </div>
+                        <div class="floating-label-group">
+                            <textarea id="message" rows="4" placeholder=" " required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+
+                        <div class="form-btn-actions">
+                            <button type="reset" class="btn-reset">Reset</button>
+                            <button type="submit" class="btn-submit">Send <i class="fas fa-paper-plane ms-1"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <iframe src="../shared/footer.html" title="Footer" scrolling="no" style="display: block; width: 100%; height: 345px; border: 0;"></iframe>
+
+    <!-- Floating Buttons -->
+    <div class="floating-widgets">
+        <a href="https://m.me/" target="_blank" rel="noopener" class="widget-btn messenger" title="Messenger" aria-label="Message us on Messenger"><i class="fab fa-facebook-messenger"></i></a>
+        <a href="tel:0985545955" class="widget-btn phone" title="Call us" aria-label="Call Koolsoft"><i class="fas fa-phone"></i></a>
+        <a href="#" class="widget-btn back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="../shared/scroll-reveal.js"></script>
+    
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const topButton = document.getElementById('backToTop');
+  if (!topButton) return;
+  topButton.addEventListener('click', function (event) { event.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  const updateTopButton = function () { topButton.style.display = window.scrollY > 250 ? 'flex' : 'none'; };
+  window.addEventListener('scroll', updateTopButton, { passive: true });
+  updateTopButton();
+});
+</script>
+</body>
+</html>

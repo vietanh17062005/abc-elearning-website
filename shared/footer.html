@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            width: 100%;
+            font-family: Roboto, sans-serif;
+        }
+
+        .footer-main {
+            min-height: 345px;
+            padding: 42px 24px 32px;
+            background: #f6f9fd;
+            color: #42536a;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 0.9fr 0.9fr 1.15fr;
+            gap: 42px;
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        .footer-info {
+            padding-top: 0;
+        }
+
+        .footer-logo {
+            display: block;
+            width: 72px;
+            height: 58px;
+            margin-bottom: 20px;
+            object-fit: contain;
+            filter: invert(1);
+        }
+
+        .footer-info p {
+            display: flex;
+            gap: 10px;
+            margin: 0 0 14px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .footer-info p i {
+            flex: 0 0 20px;
+            margin-top: 3px;
+            color: #0782d1;
+            text-align: center;
+        }
+
+        .footer-info strong {
+            font-weight: 700;
+        }
+
+        .footer-column h2 {
+            margin: 27px 0 22px;
+            color: #111;
+            font-size: 19px;
+            font-weight: 700;
+        }
+
+        .footer-column h2::after {
+            display: block;
+            width: 72px;
+            height: 3px;
+            margin-top: 8px;
+            background: #0782d1;
+            content: "";
+        }
+
+        .footer-column ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: 8px;
+        }
+
+        .footer-column a {
+            color: #42536a;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .footer-column a:hover {
+            color: #0782d1;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 56px;
+        }
+
+        .social-links a {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #0782d1;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .dmca-badge {
+            display: inline-flex;
+            flex-direction: column;
+            min-width: 126px;
+            padding: 3px 8px;
+            background: #5aae32;
+            color: #fff;
+            font-size: 26px;
+            line-height: 1.05;
+        }
+
+        .dmca-badge small {
+            margin: 2px -8px -3px;
+            padding: 4px 8px;
+            background: #242424;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-align: center;
+        }
+
+        .footer-legal {
+            display: flex;
+            min-height: 134px;
+            padding: 24px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #555;
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer-legal p {
+            margin: 4px 0;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 800px) {
+            .footer-main {
+                padding: 28px 20px;
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 20px;
+            }
+
+            .footer-column h2 {
+                margin-top: 8px;
+            }
+
+            .social-links {
+                margin-bottom: 24px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .footer-legal p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <section class="footer-main">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <img class="footer-logo" src="../images/logo.png" alt="Koolsoft">
+                    <p><i class="fas fa-location-dot"></i><span><strong>Address:</strong> Thanh An Building, 699 Vu Tong
+                            Phan Street, Khuong Dinh, Hanoi</span></p>
+                    <p><i class="fas fa-envelope"></i><span><strong>Email:</strong> <a
+                                href="mailto:support@abc-elearning.org">support@abc-elearning.org</a></span></p>
+                    <p><i class="fas fa-phone"></i><span><strong>Phone:</strong> 0985545955</span></p>
+                </div>
+                <div class="footer-column">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="../gioi-thieu/index.html" target="_top">Home</a></li>
+                        <li><a href="../gioi-thieu/index.html" target="_top">About</a></li>
+                        <li><a href="../elearning/index.html" target="_top">E-Learning</a></li>
+                        <li><a href="../erp/index.html" target="_top">ERP - University Management</a></li>
+                        <li><a href="../san-pham/index.html" target="_top">Product</a></li>
+                        <li><a href="../blog/index.html" target="_top">Blog</a></li>
+                        <li><a href="../lien-he/index.html" target="_top">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h2>Policies</h2>
+                    <ul>
+                        <li><a href="#" target="_top">Privacy Policy</a></li>
+                        <li><a href="#" target="_top">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h2>Connect with Us</h2>
+                    <div class="social-links">
+                        <a href="#" target="_top" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_top" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="dmca-badge"><span><i class="fas fa-lock"></i> DMCA</span><small>PROTECTED</small></div>
+                </div>
+            </div>
+        </section>
+    </footer>
+<script>
+    const footerFrame = window.frameElement;
+    if (footerFrame && 'ResizeObserver' in window) {
+        const resizeFooter = () => {
+            footerFrame.style.height = `${document.documentElement.scrollHeight}px`;
+        };
+        new ResizeObserver(resizeFooter).observe(document.documentElement);
+        window.addEventListener('load', resizeFooter);
+    }
+</script>
+</body>
+</html>
