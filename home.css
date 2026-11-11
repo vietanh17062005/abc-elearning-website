@@ -8,8 +8,8 @@
 .elearning-points{list-style:none!important;padding:0!important;margin:28px 0 24px!important}
 .elearning-points li{position:relative;margin:0!important;padding:18px 12px 18px 26px!important;border-bottom:1px solid #fff;color:#4c5865;font-size:15px;line-height:1.55;cursor:pointer;transition:color .2s,transform .2s,background .2s}
 .elearning-points li::before{content:"";position:absolute;left:3px;top:27px;width:9px;height:9px;border-radius:50%;background:#bcbfc2;transition:background .2s,transform .2s}
-.elearning-points li.is-active,.elearning-points li:hover,.elearning-points li:focus{color:#111;font-weight:700;outline:none}
-.elearning-points li.is-active::before,.elearning-points li:hover::before,.elearning-points li:focus::before{background:#202428;transform:scale(1.15)}
+.elearning-points li:hover,.elearning-points li:focus-visible{color:#111;font-weight:700;outline:none}
+.elearning-points li:hover::before,.elearning-points li:focus-visible::before{background:#202428;transform:scale(1.15)}
 .elearning-visual{position:relative;display:grid;place-items:center;min-height:350px;padding:12px}
 .elearning-visual-image{grid-area:1/1;width:100%;max-width:470px;height:340px;object-fit:contain;opacity:0;transform:translateY(10px) scale(.98);transition:opacity .35s ease,transform .35s ease;pointer-events:none}
 .elearning-visual-image.is-visible{opacity:1;transform:translateY(0) scale(1)}

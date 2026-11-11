@@ -12,4 +12,34 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             animatedElements.forEach(el => observer.observe(el));
+
+            const modules = document.querySelectorAll('.module-item');
+            modules.forEach(module => {
+                const toggleModule = () => {
+                    const isExpanded = module.getAttribute('aria-expanded') === 'true';
+                    modules.forEach(item => {
+                        item.classList.remove('active');
+                        item.setAttribute('aria-expanded', 'false');
+                    });
+                    if (!isExpanded) {
+                        module.classList.add('active');
+                        module.setAttribute('aria-expanded', 'true');
+                    }
+                };
+
+                module.addEventListener('click', toggleModule);
+                module.addEventListener('keydown', event => {
+                    if (event.key === 'Enter') {
+                        event.preventDefault();
+                        toggleModule();
+                    } else if (event.key === ' ') {
+                        event.preventDefault();
+                    }
+                });
+                module.addEventListener('keyup', event => {
+                    if (event.key === ' ') {
+                        toggleModule();
+                    }
+                });
+            });
         });

@@ -6,9 +6,10 @@
     <meta name="description" content="ABC ABC E-Learning provides online learning platforms and education management solutions for schools, universities and training centers.">
     <title>ABC E-Learning</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="shared/page-layout.css">
     <link rel="stylesheet" href="shared/scroll-reveal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="shared/clean-url.js" defer></script>
 </head>
 <body>
@@ -43,9 +44,9 @@
                     <h2>E-Learning Platform</h2>
                     <p>E-Learning Platform is an online platform used to deliver courses and learning materials through the Internet.</p>
                     <ul class="elearning-points">
-                        <li class="is-active" tabindex="0" data-visual="0">Comprehensive solution:<br>LMS + CRM + LCMS = ABC E-Learning</li>
-                        <li tabindex="0" data-visual="1">Elearning solution for online education business exclusively for teachers, schools, organizations and professional training businesses</li>
-                        <li tabindex="0" data-visual="2">The system developed by ABC E-Learning is based on cloud computing with an extremely low starting budget, diverse features, and flexible customization to meet all online teaching and learning management requirements.</li>
+                        <li tabindex="0" role="button" data-visual="0">Comprehensive solution:<br>LMS + CRM + LCMS = ABC E-Learning</li>
+                        <li tabindex="0" role="button" data-visual="1">Elearning solution for online education business exclusively for teachers, schools, organizations and professional training businesses</li>
+                        <li tabindex="0" role="button" data-visual="2">The system developed by ABC E-Learning is based on cloud computing with an extremely low starting budget, diverse features, and flexible customization to meet all online teaching and learning management requirements.</li>
                     </ul>
                     <a class="service-button" href="/elearning/">View details <i class="fa-solid fa-angles-right"></i></a>
                 </div>
@@ -117,19 +118,30 @@
         <a href="#top" class="widget-btn back-to-top" title="Back to top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
     </div>
     <script>
-        // Đổi ảnh minh họa theo nội dung E-Learning đang được trỏ chuột/chọn.
-        document.querySelectorAll('.elearning-points li').forEach((point) => {
-            const activate = () => {
-                document.querySelectorAll('.elearning-points li').forEach(item => item.classList.remove('is-active'));
-                point.classList.add('is-active');
-                const target = point.dataset.visual;
-                document.querySelectorAll('.elearning-visual-panel').forEach(image => {
-                    image.classList.toggle('is-visible', image.dataset.image === target);
-                });
+        // Change the preview while a point is hovered or keyboard-focused.
+        const points = [...document.querySelectorAll('.elearning-points li')];
+        const panels = [...document.querySelectorAll('.elearning-visual-panel')];
+        const showVisual = target => {
+            panels.forEach(panel => {
+                panel.classList.toggle('is-visible', panel.dataset.image === target);
+            });
+        };
+        points.forEach(point => {
+            const restoreDefault = () => {
+                const focusedPoint = points.find(item => item === document.activeElement && item.matches(':focus-visible'));
+                showVisual(focusedPoint ? focusedPoint.dataset.visual : '0');
             };
-            point.addEventListener('mouseenter', activate);
-            point.addEventListener('focus', activate);
-            point.addEventListener('click', activate);
+            point.addEventListener('mouseenter', () => showVisual(point.dataset.visual));
+            point.addEventListener('mouseleave', restoreDefault);
+            point.addEventListener('focus', () => showVisual(point.dataset.visual));
+            point.addEventListener('blur', restoreDefault);
+            point.addEventListener('click', () => showVisual(point.dataset.visual));
+            point.addEventListener('keydown', event => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    showVisual(point.dataset.visual);
+                }
+            });
         });
     </script>
     <script src="shared/scroll-reveal.js"></script>

@@ -1,0 +1,139 @@
+:root {
+    --site-font: "Poppins", sans-serif;
+    --site-body-size: 15px;
+    --site-body-line: 1.65;
+}
+
+html {
+    font-size: 16px;
+}
+
+:where(body, body *) {
+    font-family: var(--site-font);
+}
+
+body {
+    font-family: var(--site-font) !important;
+    font-size: var(--site-body-size);
+    line-height: var(--site-body-line);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body :is(h1, h2, h3, h4, h5, h6) {
+    font-family: var(--site-font) !important;
+    line-height: 1.3;
+}
+
+body h1 {
+    font-size: clamp(30px, 3vw, 40px) !important;
+}
+
+body h2 {
+    font-size: clamp(24px, 2.2vw, 30px) !important;
+}
+
+body h3 {
+    font-size: clamp(19px, 1.7vw, 22px) !important;
+}
+
+body h4 {
+    font-size: 17px !important;
+}
+
+body h5 {
+    font-size: 15px !important;
+}
+
+body h6 {
+    font-size: 14px !important;
+}
+
+body p {
+    font-size: var(--site-body-size) !important;
+    line-height: var(--site-body-line);
+}
+
+body :is(button, input, textarea, select) {
+    font: inherit;
+}
+
+.container {
+    width: min(92%, 1200px);
+    max-width: 1200px;
+}
+
+body > main.max-w-6xl {
+    width: min(92%, 1200px);
+    max-width: 1200px;
+}
+
+.pv .wrap,
+.pv .wrapw,
+.pv .hero,
+.pv .sg {
+    width: min(92%, 1200px);
+    max-width: 1200px;
+}
+
+.features-grid,
+.partners-content,
+.testimonial-grid,
+.service-card,
+.elearning-card {
+    max-width: 1200px;
+}
+
+.feature-item p,
+.service-copy > p,
+.service-copy li,
+.service-icons p,
+.testimonial-grid p {
+    font-size: 15px;
+}
+
+.service-card {
+    padding-right: 34px;
+    padding-left: 34px;
+}
+
+.partner-logos {
+    max-width: 1000px;
+}
+
+.elearning-points li {
+    border-left: 4px solid transparent;
+    border-radius: 0 8px 8px 0;
+}
+
+.elearning-points li:hover,
+.elearning-points li:focus-visible {
+    border-left-color: #ff9900;
+    background: rgba(255, 255, 255, 0.62);
+    color: #172b3d;
+    font-weight: 700;
+}
+
+.elearning-points li:focus-visible {
+    outline: 2px solid #087fc5;
+    outline-offset: 2px;
+}
+
+@media (max-width: 620px) {
+    :root {
+        --site-body-size: 14px;
+    }
+
+    .service-card {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+    .feature-item p,
+    .service-copy > p,
+    .service-copy li,
+    .service-icons p,
+    .testimonial-grid p {
+        font-size: 14px;
+    }
+}
